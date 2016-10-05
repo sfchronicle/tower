@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <%= t.include("partials/_head.html") %>
+    <%= t.include("partials/_analytics.html") %>
+  </head>
+  <script>  var HDN = HDN || {}  </script>
+
+  <body>
+
+    <div class="outer outer-slider" style="max-width: 900px">
+
+      <div class="hed">The SF skyline: past and future</div>
+      <div class="chatter">Move the slider to compare the SF skyline of 2009 (left) to the skyline today (right). The Transamerica Pyramid, seen here from Treasure Island, will soon be replaced as the tallest building in the city by the Salesforce Tower, currently under construction (second from left).</div>
+
+      <div style="text-align: center; width: 90%; margin: 0 auto;">
+      <image-slider style="width: 100%; max-width: 900px; overflow: hidden">
+        <img src="./assets/photos/img2_2009.jpeg">
+        <img src="./assets/photos/img3_2016.jpeg">
+      </image-slider>
+      </div>
+
+      <div class="interactive-credit">
+          <div class="entry">Photos: Paul Chinn / SF Chronicle</div>
+          <div class="entry">Emma O'Neill  &bull; <a href="mailto:eoneill@sfchronicle.com">eoneill@sfchronicle.com</a>   &bull; <a href = "https://twitter.com/emmaruthoneill" target="_blank">@emmaruthoneill</a></div>
+      </div>
+
+    </div>
+
+    <script src="app.js" async></script>
+    <%= t.include("partials/_helloSFC.html") %>
+
+  </body>
+</html>
