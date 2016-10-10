@@ -1,12 +1,8 @@
 <!doctype html>
 <html>
   <head>
-    <title><%= json.project.title %></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <%= t.include("partials/_head.html") %>
   </head>
 
   <body is="responsive-body">
@@ -16,23 +12,22 @@
       <div class="hed">The SF skyline: 1969 to 2009</div>
       <div class="chatter">Move the slider to compare the SF skyline of 1969 (left) to the skyline of 2009 (right). The Transamerica Pyramid will soon be replaced as the tallest building in the city.</div>
 
-      <div style="text-align: center; width: 90%; margin: 0 auto;">
+      <div style="text-align: center;">
       <image-slider style="width: 100%; max-width: 900px; overflow: hidden">
-        <img src="../assets/photos/img1969.jpeg">
-        <img src="../assets/photos/img1_2016.jpg">
+        <img src="http://projects.sfchronicle.com/2016/transamerica/img/1_1969.jpg">
+        <img src="http://projects.sfchronicle.com/2016/transamerica/img/1_2016.jpg">
       </image-slider>
-      </div>
-
       <div class="interactive-credit">
-          <div class="entry">Photos: AP photo (1969) and Paul Chinn / SF Chronicle (2009)</div>
+          <div class="entry">Photos: AP photo (1969) and Paul Chinn, The Chronicle (2009)</div>
           <div class="entry">Emma O'Neill  &bull; <a href="mailto:eoneill@sfchronicle.com">eoneill@sfchronicle.com</a>   &bull; <a href = "https://twitter.com/emmaruthoneill" target="_blank">@emmaruthoneill</a></div>
+          <div class="entry">Lucio Villa  &bull; <a href="mailto:lvilla@sfchronicle.com">lvilla@sfchronicle.com</a>   &bull; <a href = "https://twitter.com/luciovilla" target="_blank">@luciovilla</a></div>
+      </div>
       </div>
 
     </div>
 
     <script src="http://projects.sfchronicle.com/shared/js/responsive-child.js"></script>
     <script src="../slider1_app.js" async></script>
-    <%= t.include("partials/_helloSFC.html") %>
 
   </body>
 </html>

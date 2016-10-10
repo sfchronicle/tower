@@ -118,6 +118,7 @@ li {
   }
 }
 .chatter {
+  max-width:620px;
   font-size: 15px;
   text-align: center;
   padding-bottom: 5px;
@@ -135,13 +136,15 @@ li {
 }
 .outer {
   max-width: 900px;
-  margin: 30px auto;
-  @media @tablet {
-    margin: 20px;
-  }
-  @media @mobile {
-    margin: 10px;
-  }
+}
+.outer-slider{
+  margin:0 auto;
+  padding-bottom: 1em;
+    border-bottom: 1px solid #333;
+
+    @media @mobile{
+      margin:0;
+    }
 }
 .source, .credit {
   clear: left;
@@ -559,10 +562,10 @@ header {
   font-style: italic;
   font-family: @block-graphics;
   @media @tablet {
-    padding: 10px 20px;
+    padding: 0 10px;
   }
   @media @mobile {
-    padding: 20px 0;
+    padding: 0 10px;
   }
   &.padded {
     padding-bottom: 40px;
@@ -570,7 +573,5 @@ header {
 }
 
 .interactive-header, .interactive-credit {
-  width: 95%;
-  margin: auto;
-  padding: 10px 0;
+  text-align:left;
 }
